@@ -3,6 +3,8 @@
 namespace Db;
 /**
  * 数据库接口
+ *
+ * 修改后的值
  */
 interface DbInterface{
     /**
@@ -29,4 +31,6 @@ interface DbInterface{
      * @param $id 通过id查询记录
      */
     public function selectRecordById($id);
+
+
 }
