@@ -1,6 +1,6 @@
 <?php
 
-namespace Db;
+namespace db\interface;
 /**
  * 数据库接口
  *
