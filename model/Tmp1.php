@@ -1,15 +1,20 @@
 <?php
 
 
-namespace Db\Model;
+namespace db\Model;
 
-
-use Db\ModelInterface;
+use db\ModelInterface;
 
 class Tmp1 implements ModelInterface
 {
-    protected $id=null; //默认为空
+    protected $id; //默认为空
     protected $name;
+
+    public function __construct($id=null, $name=null)
+    {
+        $this->id = $id;
+        $this->name = $name;
+    }
 
     /**
      * @return mixed
